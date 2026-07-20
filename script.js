@@ -2,11 +2,11 @@
 (function initTheme() {
     const root = document.documentElement;
     const btn = document.getElementById('themeToggle');
-    const stored = localStorage.getItem('theme') || 'dark';
+    const stored = localStorage.getItem('theme') || 'light';
     function applyTheme(t) { root.setAttribute('data-theme', t); localStorage.setItem('theme', t); }
     if (btn) {
         btn.addEventListener('click', () => {
-            const current = root.getAttribute('data-theme') || 'dark';
+            const current = root.getAttribute('data-theme') || 'light';
             applyTheme(current === 'dark' ? 'light' : 'dark');
         });
     }
