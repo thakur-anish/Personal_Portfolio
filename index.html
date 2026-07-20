@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no, viewport-fit=cover">
+<title>Anish Thakur | Cybersecurity & IT Engineer</title>
+<meta name="description" content="Anish Thakur — Cybersecurity & Network Security enthusiast. BSc (Hons) Computer Systems Engineering graduate, planning an MSc in Cybersecurity abroad.">
+<meta property="og:title" content="Anish Thakur | Cybersecurity & IT Engineer">
+<meta property="og:description" content="Cybersecurity and digital forensics enthusiast focused on secure systems, networks, and digital defense.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="social-preview.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="social-preview.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<canvas id="bgParticles" class="bg-particles"></canvas>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-hex" viewBox="0 0 100 100">
+      <polygon points="50,3 93,26 93,74 50,97 7,74 7,26" />
+    </svg>
+    <div class="loader-text">Anish Thakur.....💖🇳🇵<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+    <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- NAV -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-mark"><i class="fas fa-shield-halved"></i></span>
+    <span class="logo-text">A<span class="accent">.Thakur</span></span>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <i class="fas fa-moon toggle-track-icon toggle-track-icon--dark"></i>
+    <i class="fas fa-sun toggle-track-icon toggle-track-icon--light"></i>
+    <span class="theme-slider"></span>
+  </button>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+    <li><a href="#gita" class="nav-link">Gita</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="#" class="nav-resume" id="resumeTrigger"><i class="fas fa-file-lines"></i> Resume</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-aurora"></div>
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="hero-name">
+        <span class="name-line">ANISH</span>
+        <span class="name-line accent">THAKUR</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">root@security:~$</span>
+        <span class="typing-text" id="heroType"></span><span class="cursor-blink">|</span>
+      </div>
+        <p class="hero-bio">
+          A cybersecurity and digital forensics enthusiast passionate about building
+          <span class="highlight">secure systems</span>, hardening
+          <span class="highlight">networks</span>, and defending digital infrastructure.
+          I’m continuously strengthening my skills through hands-on work in
+          <span class="highlight">ethical hacking</span>,
+          <span class="highlight">SOC operations</span>, threat detection, incident response,
+          and digital investigations. 🇳🇵
+        </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+        <a href="#projects" class="btn-secondary"><i class="fas fa-diagram-project"></i> View Projects</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.facebook.com/a.thakur.03" target="_blank" rel="noopener noreferrer" class="social-link sl-fb" data-name="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/a.thakur_03/" target="_blank" rel="noopener noreferrer" class="social-link sl-ig" data-name="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/9779807868193?text=Hi%20a.thakur_03" target="_blank" rel="noopener noreferrer" class="social-link sl-wa" data-name="WhatsApp @a.thakur_03"><i class="fab fa-whatsapp"></i></a>
+        <a href="viber://chat?number=9779807868193" class="social-link sl-vb" data-name="Viber"><i class="fab fa-viber"></i></a>
+        <a href="https://www.linkedin.com/in/its-anish-thakur/" target="_blank" rel="noopener noreferrer" class="social-link sl-li" data-name="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="social-link sl-gh" data-name="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:akanishkumar1099@gmail.com" class="social-link sl-em" data-name="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="photo-frame-rect">
+        <img src="profile_1.jpg" alt="Anish Thakur" class="profile-img-rect" data-embed="profile" style="object-position: center 12%; transform: scale(1.22);" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+        <div class="profile-placeholder-rect"><span>A</span></div>
+        <div class="photo-hover-name"><span class="phn-main">Anish Thakur</span><span class="phn-sub">A.A</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span>Scroll to explore</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights-section">
+  <div class="container">
+    <div class="highlights-grid">
+      <div class="highlight-card reveal" data-delay="100">
+        <div class="hc-icon-orbit"><i class="fas fa-shield-halved"></i></div>
+        <h3>Security-First Mindset</h3>
+        <p>Every build starts by asking "how could this break?" — from hardened auth flows to sanitized inputs.</p>
+      </div>
+      <div class="highlight-card reveal" data-delay="200">
+        <div class="hc-icon-orbit"><i class="fas fa-bolt"></i></div>
+        <h3>Fast, Practical Learner</h3>
+        <p>Comfortable picking up new tools and frameworks quickly and applying them to real, working projects.</p>
+      </div>
+      <div class="highlight-card reveal" data-delay="300">
+        <div class="hc-icon-orbit"><i class="fas fa-magnifying-glass"></i></div>
+        <h3>Detail-Oriented</h3>
+        <p>From log analysis to UI polish — I care about the small things that make systems reliable and pleasant to use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="section-bg-text">ABOUT</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Introduction</span>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="about-intro">
+      <div class="about-photo-frame about-photo-frame--outlined reveal">
+        <div class="apf-corner apf-tl"></div>
+        <div class="apf-corner apf-br"></div>
+        <img src="profile_2.jpeg" alt="Anish Thakur portrait" class="about-photo" data-embed="profile" style="object-position: center 12%; transform: scale(1.22);" onerror="this.parentElement.classList.add('no-img')">
+        <div class="about-photo-placeholder"><span>A</span></div>
+        <div class="photo-hover-name"><span class="phn-main">Anish Thakur</span><span class="phn-sub">A.A</span></div>
+        <div class="apf-tag"><i class="fas fa-shield-halved"></i> Kathmandu, Nepal 🇳🇵</div>
+      </div>
+      <div class="about-intro-text reveal" data-delay="150">
+        <p> I’m Anish — also known as <strong class="flag-highlight">Ansh</strong> — 
+          a cybersecurity enthusiast passionate about digital forensics, ethical hacking,
+          and Security Operations Center (SOC) practices. I enjoy understanding how systems work,
+          identifying vulnerabilities, and strengthening digital defenses through practical, secure solutions.
+          I’m continuously expanding my skills through hands-on projects, labs, and modern security tools. 🇳🇵</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card tilt-card reveal" data-delay="100">
+        <div class="card-glow"></div>
+        <div class="about-icon-wrap"><i class="fas fa-user-shield about-icon"></i></div>
+        <h3>Who I Am</h3>
+        <p>A cybersecurity-focused engineering graduate from ISMT College, affiliated with the University of Sunderland, London — consistently ranked among the top performers throughout the programme.</p>
+      </div>
+
+      <div class="about-card tilt-card reveal" data-delay="200">
+        <div class="card-glow"></div>
+        <div class="about-icon-wrap"><i class="fas fa-bullseye about-icon"></i></div>
+        <h3>My Objective</h3>
+        <p>To build a successful career in Cybersecurity & Digital Forensics by applying my academic knowledge, improving practical skills, and gaining real-world experience in cyber defence.</p>
+      </div>
+
+      <div class="about-card tilt-card reveal" data-delay="300">
+        <div class="card-glow"></div>
+        <div class="about-icon-wrap"><i class="fas fa-globe about-icon"></i></div>
+        <h3>Personal Info</h3>
+        <ul class="about-info-list">
+          <li><i class="fas fa-cake-candles"></i> August 19, 2004</li>
+          <li><i class="fas fa-flag"></i> Nepalese 🇳🇵</li>
+          <li><i class="fas fa-language"></i> Nepali · English · Maithili</li>
+          <li><i class="fas fa-location-dot"></i> Kathmandu, Nepal</li>
+        </ul>
+      </div>
+
+      <div class="about-card tilt-card reveal" data-delay="400">
+        <div class="card-glow"></div>
+        <div class="about-icon-wrap"><i class="fas fa-trophy about-icon"></i></div>
+        <h3>Achievements</h3>
+        <ul class="about-info-list">
+          <li><i class="fas fa-star"></i> Top academic performer in cohort</li>
+          <li><i class="fas fa-circle-check"></i> Graduated — BSc (Hons) Computer Systems Engineering</li>
+          <li><i class="fas fa-users"></i> Peer mentor &amp; code debugger</li>
+          <li><i class="fas fa-shield-halved"></i> Cybersecurity workshop member</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="philosophy-banner reveal">
+      <div class="pb-icon"><i class="fas fa-brain"></i></div>
+      <blockquote>"If you don't fight for the things you really want, you'll be left with nothing but regret. ❤️‍🩹"</blockquote>
+      <div class="pb-label">— Anish Thakur</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section education-section" id="education">
+  <div class="section-bg-text">EDU</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Academic Path</span>
+      <h2 class="section-title">Education <span class="accent">Journey</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-dot"><i class="fas fa-school"></i></div>
+        <div class="timeline-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="timeline-year">2010 – 2020</div>
+          <h3>Mithila Montessori School</h3>
+          <p class="timeline-location"><i class="fas fa-location-dot"></i> Janakpur, Nepal</p>
+          <p class="timeline-grade">Class I – X &nbsp;|&nbsp; SEE Examination</p>
+          <p>Ten formative years building a strong academic foundation. I successfully passed the SEE examination with excellent grades.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="right">
+        <div class="timeline-dot"><i class="fas fa-flask"></i></div>
+        <div class="timeline-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="timeline-year">2020 – 2022</div>
+          <h3>Dhanusha Science Campus</h3>
+          <p class="timeline-location"><i class="fas fa-location-dot"></i> Janakpur, Nepal</p>
+          <p class="timeline-grade">+2 Science &nbsp;|&nbsp; Biology &amp; Mathematics</p>
+          <p>Deepened analytical skills through focused science study, igniting a passion for technology-driven solutions.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-dot done"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-card tilt-card featured">
+          <div class="card-glow"></div>
+          <div class="timeline-badge timeline-badge--done"><i class="fas fa-circle-check"></i> Graduated</div>
+          <div class="timeline-year">2023 – 2026</div>
+          <h3>ISMT College</h3>
+          <p class="timeline-location"><i class="fas fa-location-dot"></i> Kathmandu, Nepal</p>
+          <p class="timeline-grade">BSc (Hons) Computer Systems Engineering (IT)<br>Affiliated with University of Sunderland, London</p>
+          <div class="modules-grid">
+            <span class="module-tag"><i class="fas fa-shield-halved"></i> Cybersecurity &amp; Ethical Hacking</span>
+            <span class="module-tag"><i class="fas fa-code"></i> Object-Oriented Programming</span>
+            <span class="module-tag"><i class="fas fa-database"></i> Database Management</span>
+            <span class="module-tag"><i class="fas fa-network-wired"></i> Networking Fundamentals</span>
+            <span class="module-tag"><i class="fas fa-magnifying-glass"></i> Digital Forensics</span>
+            <span class="module-tag"><i class="fas fa-globe"></i> Web Development</span>
+            <span class="module-tag"><i class="fas fa-terminal"></i> Intro to Programming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="right">
+        <div class="timeline-dot planned"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-card tilt-card featured planned-card">
+          <div class="card-glow"></div>
+          <div class="timeline-badge timeline-badge--planned"><i class="fas fa-hourglass-half"></i> Planned</div>
+          <div class="timeline-year">2026 – Onwards</div>
+          <h3>MSc Cybersecurity & Digital Forensics <span class="abroad-tag">(Abroad)</span></h3>
+          <p class="timeline-location"><i class="fas fa-earth-americas"></i> Destination — Under Application</p>
+          <p class="timeline-grade">Master of Science in Cybersecurity & Digital Forensics</p>
+          <p>Actively preparing applications and exploring universities abroad to specialize in advanced cyber defense, threat intelligence, and security architecture at the postgraduate level.</p>
+          <div class="modules-grid">
+            <span class="module-tag"><i class="fas fa-file-signature"></i> Applications In Progress</span>
+            <span class="module-tag"><i class="fas fa-passport"></i> Study Abroad</span>
+            <span class="module-tag"><i class="fas fa-user-secret"></i> Advanced Cyber Defence</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects-section" id="projects">
+  <div class="section-bg-text">WORK</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Selected Work</span>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card tilt-card reveal" data-delay="100">
+        <div class="project-glow"></div>
+        <div class="project-num">01</div>
+        <div class="project-icon-wrap"><i class="fab fa-java project-icon"></i></div>
+        <h3>Java Help Desk System</h3>
+        <p class="proj-year">1st Year Project</p>
+        <p>Fully functional help desk ticket management system built with Java and MySQL. Features ticket creation, assignment, status tracking and reporting with full OOP principles and JDBC connectivity.</p>
+        <div class="project-tags"><span>Java</span><span>MySQL</span><span>OOP</span><span>JDBC</span></div>
+        <div class="project-links"><a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fab fa-github"></i> GitHub</a></div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-delay="200">
+        <div class="project-glow"></div>
+        <div class="project-num">02</div>
+        <div class="project-icon-wrap"><i class="fas fa-robot project-icon"></i></div>
+        <h3>AI-Powered Dynamic Web Platform</h3>
+        <p class="proj-year">Web Development Project</p>
+        <p>A fully responsive, dynamic AI-solutions website with separate Admin and Super Admin roles, secure authentication with bcrypt-hashed passwords, Google reCAPTCHA bot protection, and complete CRUD-driven content management — built server-side from scratch.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>bcrypt</span><span>reCAPTCHA</span></div>
+        <div class="project-links"><a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fab fa-github"></i> GitHub</a></div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-delay="300">
+        <div class="project-glow"></div>
+        <div class="project-num">03</div>
+        <div class="project-icon-wrap"><i class="fas fa-dumbbell project-icon"></i></div>
+        <h3>FitLife - Android Fitness App</h3>
+        <p class="proj-year">Final Major Project · BSc CS, Ravensbourne University London</p>
+        <p>A fully functional Android fitness app bringing workout tracking, exercise guidance, nutrition monitoring and budget management into one approachable interface — built for people who want to stay fit without expensive gyms or personal coaching. Built with Kotlin using the MVVM architecture and Android Jetpack (Navigation, LiveData, ViewModel, Room).</p>
+        <div class="project-tags"><span>Kotlin</span><span>Android Studio</span><span>MVVM</span><span>Jetpack</span><span>Room</span></div>
+        <div class="project-links"><a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fab fa-github"></i> GitHub</a></div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-delay="400">
+        <div class="project-glow"></div>
+        <div class="project-num">04</div>
+        <div class="project-icon-wrap"><i class="fas fa-eye project-icon"></i></div>
+        <h3>Real-Time Computer Vision System</h3>
+        <p class="proj-year">AI / Computer Vision Project</p>
+        <p>A unified real-time computer vision pipeline combining object detection, hand tracking and human activity recognition (standing / sitting / hands up) over a live webcam feed — using YOLOv8 for detection and MediaPipe for hand & pose tracking. A threaded camera loop keeps annotated bounding boxes, landmarks and FPS smooth in real time, demonstrating practical AI-driven human-computer interaction.</p>
+        <div class="project-tags"><span>Python</span><span>YOLOv8</span><span>MediaPipe</span><span>OpenCV</span><span>Computer Vision</span></div>
+        <div class="project-links"><a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fab fa-github"></i> GitHub</a></div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-delay="500">
+        <div class="project-glow"></div>
+        <div class="project-num">05</div>
+        <div class="project-icon-wrap"><i class="fas fa-id-card project-icon"></i></div>
+        <h3>3D Cyber Portfolio</h3>
+        <p class="proj-year">Frontend + WebGL Project</p>
+        <p>This portfolio — a real-time 3D wireframe core built with Three.js, tilt-responsive glass cards, typing effects and scroll reveals on a dark gold-and-teal theme. Fully responsive across all devices.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Three.js</span></div>
+        <div class="project-links"><a href="#home" class="proj-link"><i class="fas fa-eye"></i> Live</a><a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fab fa-github"></i> GitHub</a></div>
+      </div>
+
+      <div class="project-card full-width tilt-card reveal" data-delay="600">
+        <div class="project-glow"></div>
+        <div class="project-num">06</div>
+        <div class="project-icon-wrap"><i class="fas fa-shield-virus project-icon"></i></div>
+        <h3>Cybersecurity Lab &amp; Toolset</h3>
+        <p class="proj-year">Cybersecurity Module — Practical Labs</p>
+        <p>Hands-on practical work across multiple cybersecurity domains — SIEM log analysis, disk imaging, browser forensics, penetration testing and live network traffic capture. All conducted in isolated virtual lab environments on Kali Linux and Windows.</p>
+        <p class="tools-intro"><strong>Some tools used include:</strong></p>
+        <div class="tool-showcase">
+          <div class="tool-item"><i class="fas fa-chart-bar"></i><span>Splunk SIEM</span></div>
+          <div class="tool-item"><i class="fas fa-compact-disc"></i><span>FTK Imager</span></div>
+          <div class="tool-item"><i class="fas fa-microscope"></i><span>Autopsy</span></div>
+          <div class="tool-item"><i class="fas fa-clock-rotate-left"></i><span>Browser History Examiner</span></div>
+          <div class="tool-item"><i class="fas fa-wifi"></i><span>Nmap</span></div>
+          <div class="tool-item"><i class="fas fa-bug"></i><span>Metasploit</span></div>
+          <div class="tool-item"><i class="fas fa-diagram-project"></i><span>Maltego</span></div>
+          <div class="tool-item"><i class="fas fa-server"></i><span>VirtualBox</span></div>
+          <div class="tool-item"><i class="fas fa-wave-square"></i><span>Wireshark</span></div>
+          <div class="tool-item"><i class="fab fa-linux"></i><span>Kali Linux</span></div>
+          <div class="tool-item"><i class="fab fa-windows"></i><span>Windows OS</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills-section" id="skills">
+  <div class="section-bg-text">SKILLS</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Capabilities</span>
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-bars reveal">
+        <h3 class="skills-sub">Core Proficiency</h3>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fab fa-html5"></i> HTML / CSS</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fab fa-js"></i> JavaScript</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fab fa-php"></i> PHP</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fab fa-java"></i> Java</span><span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fab fa-python"></i> Python</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fas fa-database"></i> MySQL / SQL</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span class="skill-name"><i class="fas fa-code"></i> C++</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+      </div>
+
+      <div class="skills-pills reveal" data-delay="200">
+        <h3 class="skills-sub">Tools &amp; Technologies</h3>
+        <div class="pills-grid">
+          <div class="pill"><i class="fab fa-linux"></i><span>Kali Linux</span></div>
+          <div class="pill"><i class="fas fa-eye"></i><span>Wireshark</span></div>
+          <div class="pill"><i class="fas fa-box"></i><span>VirtualBox</span></div>
+          <div class="pill"><i class="fab fa-windows"></i><span>Windows</span></div>
+          <div class="pill"><i class="fas fa-shield-halved"></i><span>Splunk SIEM</span></div>
+          <div class="pill"><i class="fas fa-compact-disc"></i><span>FTK Imager</span></div>
+          <div class="pill"><i class="fas fa-microscope"></i><span>Autopsy</span></div>
+          <div class="pill"><i class="fas fa-wifi"></i><span>Nmap</span></div>
+          <div class="pill"><i class="fas fa-bug"></i><span>Metasploit</span></div>
+          <div class="pill"><i class="fas fa-diagram-project"></i><span>Maltego</span></div>
+          <div class="pill"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+          <div class="pill"><i class="fas fa-network-wired"></i><span>Cisco Packet Tracer</span></div>
+          <div class="pill"><i class="fas fa-chart-line"></i><span>PRTG Network Monitor</span></div>
+          <div class="pill"><i class="fas fa-tasks"></i><span>Agile</span></div>
+          <div class="pill"><i class="fab fa-docker"></i><span>Docker</span></div>
+        </div>
+
+        <h3 class="skills-sub" style="margin-top:2rem">Soft Skills</h3>
+        <div class="soft-skills">
+          <div class="soft-item"><div class="soft-ring"><svg viewBox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="34"/><circle class="fg" cx="40" cy="40" r="34" data-pct="80"/></svg><span class="soft-pct">80%</span></div><p>Communication</p></div>
+          <div class="soft-item"><div class="soft-ring"><svg viewBox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="34"/><circle class="fg" cx="40" cy="40" r="34" data-pct="85"/></svg><span class="soft-pct">85%</span></div><p>Teamwork</p></div>
+          <div class="soft-item"><div class="soft-ring"><svg viewBox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="34"/><circle class="fg" cx="40" cy="40" r="34" data-pct="88"/></svg><span class="soft-pct">88%</span></div><p>Analytical</p></div>
+          <div class="soft-item"><div class="soft-ring"><svg viewBox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="34"/><circle class="fg" cx="40" cy="40" r="34" data-pct="82"/></svg><span class="soft-pct">82%</span></div><p>Time Management</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section certifications-section" id="certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Credentials</span>
+      <h2 class="section-title">Certifications <span class="accent">&amp; Training</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card tilt-card reveal" data-delay="100">
+        <div class="card-glow"></div>
+        <div class="cert-badge"><i class="fas fa-certificate"></i> Certificate</div>
+        <h3>Advanced Cybersecurity Course</h3>
+        <p class="cert-institution">Broadway Infosys</p>
+        
+        <div class="cert-content-layout">
+          <div class="cert-image-box">
+            <a href="certificate.jpeg" target="_blank" rel="noopener noreferrer" class="cert-img-link">
+              <img src="certificate.jpeg" alt="Advanced Cybersecurity Course certificate" class="cert-image">
+            </a>
+          </div>
+          <div class="cert-text-side">
+            <p>This course covered practical cybersecurity skills including defense strategies, attack analysis, and modern security workflows.</p>
+            <ul class="cert-list">
+              <li>Ethical Hacking &amp; Penetration Testing</li>
+              <li>Digital Forensics</li>
+              <li>Cloud Security</li>
+              <li>SIEM &amp; Threat Detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section class="section hobbies-section" id="hobbies">
+  <div class="section-bg-text">FUN</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Beyond Code</span>
+      <h2 class="section-title">Hobbies &amp; <span class="accent">Interests</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="hobbies-grid">
+      <div class="hobby-card tilt-card reveal" data-delay="100"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-book-open hobby-icon"></i></div><h3>Study &amp; Reading</h3><p>Passionate about continuous learning — from textbooks to tech blogs, always expanding knowledge in cybersecurity and IT.</p><div class="hobby-tag">📚 Bookworm</div></div>
+      <div class="hobby-card tilt-card reveal" data-delay="200"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-headphones hobby-icon"></i></div><h3>Listening to Music</h3><p>Music fuels focus and creativity. From lo-fi study beats to energetic tracks — always on the playlist while coding.</p><div class="hobby-tag">🎵 Music Lover</div></div>
+      <div class="hobby-card tilt-card reveal" data-delay="300"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-gamepad hobby-icon"></i></div><h3>PUBG Mobile</h3><p>Strategic thinking and quick decision-making on the battlefield. Team player with sharp reflexes and game sense.</p><div class="hobby-tag">🎮 PUBG ID: <strong>5517140812</strong></div></div>
+      <div class="hobby-card tilt-card reveal" data-delay="400"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-plane hobby-icon"></i></div><h3>Traveling</h3><p>Exploring new places, cultures, and perspectives. Every journey brings fresh stories and creative inspiration.</p><div class="hobby-tag">✈️ Explorer</div></div>
+      <div class="hobby-card tilt-card reveal" data-delay="500"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-utensils hobby-icon"></i></div><h3>Cooking</h3><p>Experimenting in the kitchen is another form of creativity — mixing ingredients the same way I mix ideas and code to create something meaningful.</p><div class="hobby-tag">👨‍🍳 Home Chef</div></div>
+      <div class="hobby-card philosophy-card tilt-card reveal" data-delay="600"><div class="hobby-glow"></div><div class="hobby-icon-wrap"><i class="fas fa-heart hobby-icon"></i></div><h3>Life Philosophy</h3><blockquote class="hobby-quote">"If you don't fight for the things you really want, you'll be left with nothing but regret. ❤️‍🩹"</blockquote><div class="hobby-tag">💭 Personal Motto</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GITA / SPIRITUAL -->
+<section class="section gita-section" id="gita">
+  <div class="section-bg-text">GITA</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Words I Live By</span>
+      <h2 class="section-title">श्रीकृष्ण <span class="accent">&amp; The Bhagavad Gita</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="gita-layout">
+      <div class="krishna-art reveal">
+        <svg viewBox="0 0 220 300" class="krishna-svg" aria-label="Animated spinning Sudarshan Chakra rendered in fire colours">
+          <defs>
+            <radialGradient id="haloGrad" cx="50%" cy="50%" r="55%">
+              <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="hubGrad" cx="40%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#ffe27a"/>
+              <stop offset="55%" stop-color="#ff9d2b"/>
+              <stop offset="100%" stop-color="#e2381c"/>
+            </radialGradient>
+            <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffcf5c"/>
+              <stop offset="50%" stop-color="#ff7a1a"/>
+              <stop offset="100%" stop-color="#e2381c"/>
+            </linearGradient>
+            <linearGradient id="flameTip" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffe27a"/>
+              <stop offset="60%" stop-color="#ff9d2b"/>
+              <stop offset="100%" stop-color="#e2381c"/>
+            </linearGradient>
+          </defs>
+          <circle cx="110" cy="150" r="95" fill="url(#haloGrad)"/>
+
+          <g class="chakra-tilt" transform="rotate(45 110 150)">
+            <g class="chakra-spin" transform-origin="110 150">
+              <circle cx="110" cy="150" r="72" fill="none" stroke="url(#ringGrad)" stroke-width="4" opacity="0.9"/>
+              <circle cx="110" cy="150" r="58" fill="none" stroke="#ffcf5c" stroke-width="1.4" stroke-dasharray="3 6" opacity="0.55"/>
+              <g stroke="url(#ringGrad)" stroke-width="3" stroke-linecap="round">
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(0 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(30 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(60 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(90 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(120 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(150 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(180 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(210 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(240 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(270 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(300 110 150)"/>
+                <line x1="110" y1="150" x2="110" y2="78" transform="rotate(330 110 150)"/>
+              </g>
+              <g fill="url(#flameTip)" class="chakra-flames">
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(0 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(30 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(60 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(90 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(120 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(150 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(180 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(210 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(240 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(270 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(300 110 150)"/>
+                <path d="M110 70 L102 90 L110 84 L118 90 Z" transform="rotate(330 110 150)"/>
+              </g>
+              <circle cx="110" cy="150" r="20" fill="url(#hubGrad)"/>
+              <circle cx="110" cy="150" r="20" fill="none" stroke="var(--bg)" stroke-width="2"/>
+            </g>
+          </g>
+        </svg>
+        <p class="krishna-caption">सुदर्शन चक्र — the ever-spinning discus of Lord Krishna, symbol of protection and righteous action.</p>
+
+        <div class="candle-wrap" aria-hidden="true">
+          <div class="candle-glow"></div>
+          <svg class="candle-svg" viewBox="0 0 60 120">
+            <rect x="20" y="52" width="20" height="58" rx="3" fill="#f3ead9"/>
+            <rect x="20" y="52" width="20" height="58" rx="3" fill="url(#waxShade)"/>
+            <ellipse cx="30" cy="52" rx="10" ry="3.4" fill="#fffaf0"/>
+            <path d="M30 49 Q28 40 30 32" stroke="#3a3226" stroke-width="1.4" fill="none"/>
+            <defs>
+              <linearGradient id="waxShade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#000" stop-opacity="0.1"/>
+                <stop offset="50%" stop-color="#000" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#000" stop-opacity="0.15"/>
+              </linearGradient>
+            </defs>
+            <g class="flame-group">
+              <path class="flame-outer" d="M30 2 C 20 16, 20 28, 30 38 C 40 28, 40 16, 30 2 Z" fill="#ff8a2b"/>
+              <path class="flame-inner" d="M30 14 C 25 22, 25 30, 30 35 C 35 30, 35 22, 30 14 Z" fill="#ffe27a"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gita-shlokas">
+        <div class="shloka-card tilt-card reveal" data-delay="100">
+          <div class="burnt-edge"></div>
+          <div class="card-glow"></div>
+          <span class="shloka-ref">Bhagavad Gita 2.47</span>
+          <p class="shloka-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</p>
+          <p class="shloka-meaning">Focus on doing your duty well — the outcome isn't fully in your hands, so don't let attachment to results hold you back from acting.</p>
+        </div>
+        <div class="shloka-card tilt-card reveal" data-delay="200">
+          <div class="burnt-edge"></div>
+          <div class="card-glow"></div>
+          <span class="shloka-ref">Bhagavad Gita 2.20</span>
+          <p class="shloka-sanskrit">न जायते म्रियते वा कदाचि-न्नायं भूत्वा भविता वा न भूयः।<br>अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥</p>
+          <p class="shloka-meaning">The soul is never born and never dies; it is eternal and unchanging even as the body it inhabits passes away.</p>
+        </div>
+        <div class="shloka-card tilt-card reveal" data-delay="300">
+          <div class="burnt-edge"></div>
+          <div class="card-glow"></div>
+          <span class="shloka-ref">Bhagavad Gita 18.66</span>
+          <p class="shloka-sanskrit">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।<br>अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः॥</p>
+          <p class="shloka-meaning">Let go of fear and overthinking, surrender your worries, and trust the process — clarity follows once you stop resisting it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-bg-text">CONTACT</div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Let's Connect</span>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <p class="contact-tagline-center reveal">Skip the form — reach out directly. I usually reply within a few hours and I’m open to internships, freelance work, and cybersecurity opportunities.</p>
+
+    <div class="quick-contact reveal" data-delay="100">
+      <a href="mailto:akanishkumar1099@gmail.com" class="quick-contact-main tilt-card">
+        <div class="card-glow"></div>
+        <div class="qc-icon"><i class="fas fa-envelope"></i></div>
+        <div class="qc-text">
+          <span class="qc-label">Email me directly</span>
+          <span class="qc-value">akanishkumar1099@gmail.com</span>
+        </div>
+        <i class="fas fa-arrow-right qc-arrow"></i>
+      </a>
+
+      <a href="https://wa.me/9779807868193?text=Hi%20a.thakur_03" target="_blank" rel="noopener noreferrer" class="quick-contact-main tilt-card">
+        <div class="card-glow"></div>
+        <div class="qc-icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="qc-text">
+          <span class="qc-label">Chat on WhatsApp</span>
+          <span class="qc-value">@a.thakur_03</span>
+        </div>
+        <i class="fas fa-arrow-right qc-arrow"></i>
+      </a>
+    </div>
+
+    <div class="social-grid reveal" data-delay="200">
+      <a href="https://www.linkedin.com/in/its-anish-thakur/" target="_blank" rel="noopener noreferrer" class="social-tile tilt-card"><div class="card-glow"></div><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+      <a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="social-tile tilt-card"><div class="card-glow"></div><i class="fab fa-github"></i><span>GitHub</span></a>
+      <a href="https://www.facebook.com/a.thakur.03" target="_blank" rel="noopener noreferrer" class="social-tile tilt-card"><div class="card-glow"></div><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+      <a href="https://www.instagram.com/a.thakur_03/" target="_blank" rel="noopener noreferrer" class="social-tile tilt-card"><div class="card-glow"></div><i class="fab fa-instagram"></i><span>Instagram</span></a>
+      <a href="viber://chat?number=9779807868193" class="social-tile tilt-card"><div class="card-glow"></div><i class="fab fa-viber"></i><span>Viber</span></a>
+      <a href="tel:+9779807868193" class="social-tile tilt-card"><div class="card-glow"></div><i class="fas fa-phone"></i><span>Call</span></a>
+    </div>
+
+    <div class="contact-location reveal" data-delay="300"><i class="fas fa-location-dot"></i> Based in Kathmandu, Nepal — open to remote &amp; on-site opportunities</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-cta">
+    <div class="footer-mascot" aria-hidden="true">
+      <svg viewBox="0 0 160 120" class="mascot-svg">
+        <ellipse cx="80" cy="108" rx="70" ry="8" fill="rgba(0,0,0,0.35)"/>
+        <!-- laptop base -->
+        <rect x="35" y="78" width="90" height="8" rx="2" fill="var(--bg-card-2)" stroke="var(--border)"/>
+        <path d="M35 78 L45 40 L115 40 L125 78 Z" fill="var(--bg-card-2)" stroke="var(--border)" stroke-width="1.4"/>
+        <rect x="52" y="46" width="56" height="28" rx="2" fill="var(--bg)" class="mascot-screen"/>
+        <text x="80" y="63" text-anchor="middle" class="mascot-code" font-family="monospace" font-size="9" fill="var(--amber)">&lt;/&gt;</text>
+        <!-- character -->
+        <g class="mascot-figure">
+          <circle cx="80" cy="18" r="11" fill="var(--amber-2)"/>
+          <rect x="70" y="27" width="20" height="24" rx="7" fill="var(--amber)"/>
+          <path class="mascot-arm-l" d="M71 33 Q58 38 56 46" stroke="var(--amber)" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path class="mascot-arm-r" d="M89 33 Q102 38 104 46" stroke="var(--amber)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </g>
+        <circle class="mascot-spark mascot-spark-1" cx="30" cy="30" r="2.4" fill="var(--cyan)"/>
+        <circle class="mascot-spark mascot-spark-2" cx="132" cy="24" r="2" fill="var(--amber-2)"/>
+        <circle class="mascot-spark mascot-spark-3" cx="122" cy="60" r="1.8" fill="var(--cyan)"/>
+      </svg>
+    </div>
+    <p class="footer-tagline">Always building, always defending — thanks for stopping by.</p>
+    <p class="footer-subline">(Think before you click 🔒)</p>
+  </div>
+
+  <div class="footer-line"></div>
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; 2026 Anish Thakur. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/a.thakur.03" target="_blank" rel="noopener noreferrer" class="sl-fb" data-name="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/a.thakur_03/" target="_blank" rel="noopener noreferrer" class="sl-ig" data-name="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9779807868193?text=Hi%20a.thakur_03" target="_blank" rel="noopener noreferrer" class="sl-wa" data-name="WhatsApp @a.thakur_03"><i class="fab fa-whatsapp"></i></a>
+      <a href="viber://chat?number=9779807868193" class="sl-vb" data-name="Viber"><i class="fab fa-viber"></i></a>
+      <a href="https://www.linkedin.com/in/its-anish-thakur/" target="_blank" rel="noopener noreferrer" class="sl-li" data-name="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/thakur-anish" target="_blank" rel="noopener noreferrer" class="sl-gh" data-name="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <div class="footer-watermark" aria-hidden="true">A.A</div>
+</footer>
+
+<!-- RESUME MODAL -->
+<div class="resume-modal-overlay" id="resumeModalOverlay">
+  <div class="resume-modal">
+    <button class="resume-modal-close" id="resumeModalClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div class="resume-modal-icon"><i class="fas fa-file-shield"></i></div>
+    <h3>Anish Thakur - Resume</h3>
+    <p>Choose how you'd like to access the resume.</p>
+    <div class="resume-modal-actions">
+      <a href="Anish_Thakur_Cybersecurity_CV.pdf" target="_blank" rel="noopener noreferrer" class="resume-modal-btn resume-view"><i class="fas fa-eye"></i> View</a>
+      <a href="Anish_Thakur_Cybersecurity_CV.pdf" download="Anish_Thakur_Cybersecurity_CV.pdf" class="resume-modal-btn resume-download"><i class="fas fa-download"></i> Download</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

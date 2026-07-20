@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#060608"/>
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="#121016" stroke="#C4B5FD" stroke-opacity="0.35"/>
+  <circle cx="300" cy="320" r="170" fill="none" stroke="#C4B5FD" stroke-width="10" opacity="0.35"/>
+  <path d="M300 170 420 240 420 400 300 470 180 400 180 240 300 170Z" fill="none" stroke="#2dd4bf" stroke-width="8"/>
+  <circle cx="300" cy="320" r="54" fill="#f7f5fb"/>
+  <text x="520" y="280" fill="#f7f5fb" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700">Anish Thakur</text>
+  <text x="520" y="340" fill="#C4B5FD" font-family="Segoe UI, Arial, sans-serif" font-size="34">Cybersecurity &amp; Digital Forensics</text>
+  <text x="520" y="390" fill="#9ca3af" font-family="Segoe UI, Arial, sans-serif" font-size="24">Secure systems • Networks • Threat defense</text>
+</svg>
